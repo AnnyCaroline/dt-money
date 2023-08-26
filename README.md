@@ -1,5 +1,30 @@
 # React + TypeScript + Vite
 
+# Notes
+```
+npx json-server server.json
+npx json-server server.json -w
+npx json-server server.json -w -d 500 // 500 ms de delay em todas as requisições
+
+npm run server
+```
+
+Nota: posso colocar o comando do json-server no package.json. O npx é opcional.
+
+Para criar o projeto, usei `npm create vite@latest`.
+
+```
+new Date().toISOString()
+```
+
+Usando o json-server
+http://localhost:3000/transactions
+http://localhost:3000/transactions/1
+http://localhost:3000/transactions?type=income
+http://localhost:3000/transactions?_sort=createdAt&_order=desc
+http://localhost:3000/transactions?q=venda
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
